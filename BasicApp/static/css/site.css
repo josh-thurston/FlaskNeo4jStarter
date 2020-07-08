@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    background-color: #ffffff;
+}
+
+.main_content {
+    background: #ffffff;
+    margin: 0;
+    padding: 0 0 50px;
+}
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px gray;
+    text-align: center;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #EFEFEF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.topnav a:hover {
+    color: white;
+}
+
+.message h1 {
+    width: 100%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-wrapper {
+    border: 1px solid gray;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form-label {
+    padding: 5px;
+    font-weight: bold;
+}
+
+form {
+    padding: 20px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+form .controls {
+    margin-bottom: 1em;
+}
+
+input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.actions, h2{
+    text-align: center;
+}
+
+.error-msg {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    color: black;
+}
+
+footer a {
+    color: darkorange;
+}

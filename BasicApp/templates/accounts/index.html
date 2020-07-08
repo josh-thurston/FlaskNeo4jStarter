@@ -1,0 +1,20 @@
+{% extends "shared/_layout.html" %}
+{% block title %}Home{% endblock %}
+{% block main_content %}
+
+<div class="main">
+    <div class="form-wrapper">
+        <form method="post">
+            <h2>Profile</h2>
+            {% for info in user_profile %}
+                <input class="form-control" type="text" name="name" placeholder=" Full Name" value="{{ info.name }}">
+                <input class="form-control" type="text" name="email" placeholder=" email" value="{{ info.email }}">
+                <input class="form-control" type="text" name="company" placeholder=" Company Name" value="{{ info.company }}">
+            {% endfor %}
+            <div class="actions">
+                <button type="submit" class="bt btn-info btn-sm">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

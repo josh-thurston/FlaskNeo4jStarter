@@ -9,4 +9,4 @@ Flask with Neo4j Starter that includes User Registration, Login, and Session Man
 
 Notes:
 - This is not a completed application that is ready for deployment.  It is a starting point only.  
-- Be sure to change the Neo4j credentials and foundin data/db_session.py
+- Be sure to change the Neo4j credentials and found in data/db_session.py

@@ -1,0 +1,36 @@
+{% extends "shared/_layout.html" %}
+{% block title %}Register{% endblock %}
+{% block main_content %}
+    <div class="main">
+        <div class="form-wrapper">
+            <form method="POST">
+                <h2>Register</h2>
+                <input class="form-control" type="text" name="name" placeholder=" Full Name" required
+                       value="{{ name }}">
+                <input class="form-control" type="email" name="email" placeholder=" Email" required value="{{ email }}">
+                <input class="form-control" type="text" name="company" placeholder=" Company Name" required
+                       value="{{ company }}">
+                <input class="form-control" type="password" name="password" placeholder=" Password" required
+                       value="{{ password }}">
+                <input class="form-control" type="password" name="confirm" placeholder=" Password" required
+                       value="{{ password }}">
+
+                <div class="actions">
+                    <button type="submit" class="bt btn-info btn-sm">Register</button>
+                </div>
+                <div class="error-msg">
+                    {% if error %}
+                        <div class="error-msg">{{ error }}</div>
+                    {% endif %}
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for msg in messages %}
+                                <p>{{ msg }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
